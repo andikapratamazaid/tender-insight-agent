@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tender Insight Agent — Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">TENDER INSIGHT AGENT</p>
+    <h1>Dashboard Analisis Bid / No-Bid</h1>
+    <p class="sub">Hasil analisis deterministik + Risk Engine + AI Insight atas dokumen contoh. Angka sama persis dengan keluaran CLI.</p>
+    <p class="meta" id="meta"></p>
+  </div>
+</header>
+
+<main>
+  <section id="cards" class="cards"></section>
+
+  <section class="panel">
+    <h2>Perbandingan Skor Kesiapan</h2>
+    <div id="score-chart" class="score-chart"></div>
+    <p class="note">Garis ambang: 85 untuk BID, 60 untuk BID DENGAN CATATAN, di bawahnya NO-BID.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Detail per Tender</h2>
+    <div class="tabs" id="tabs"></div>
+    <div id="detail"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Data contoh fiktif untuk demonstrasi portofolio. Dibangun oleh Tender Insight Agent (Python) dan dirender statis dengan HTML, CSS, dan JavaScript.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
